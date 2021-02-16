@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer')
 const config = require('./config.js')
 
-const getBearerToken = async () => {
+const getUserData = async () => {
 	let bearerToken, accountId
 	const waitForFetchedData = async () => {
 		return new Promise((resolve) => {
@@ -54,4 +54,4 @@ const getBearerToken = async () => {
 	return { bearerToken, accountId }
 }
 
-module.exports = getBearerToken
+module.exports = getUserData
